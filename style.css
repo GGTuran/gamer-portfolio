@@ -103,6 +103,23 @@ text-transform: uppercase;
     padding: 100px;
 
 }
+.watch p{
+    visibility: hidden;
+    position: absolute;
+    top: 40%;
+    right: 30%;
+}
+.watch:hover p{
+    visibility: visible;
+    position: absolute;
+    top: 40%;
+    right: 30%;
+   
+}
+.watch-now{
+    position: relative;
+   
+}
 .online-games h1{
     font-size: 28px;
 font-weight: 700;
@@ -176,7 +193,7 @@ font-weight: 400;
 }
 /* .footer */
 .footer{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     height: 350px;
     margin: auto;
