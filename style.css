@@ -46,19 +46,19 @@ font-weight: 500;
 /* banner styles */
 .banner-section{
     /* height: 500px; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .banner-text{
     height: 700px;
-    width: 1000%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border: 2px solid green;
+    /* border: 2px solid green; */
     background-image: url(./images/Group\ 14.png);
 }
 .banner-text-container h2{
@@ -92,6 +92,31 @@ text-transform: uppercase;
 }
 
 
+/* games style */
+.online-games{
+    /* border: 2px solid blueviolet; */
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    /* gap: 20px; */
+    /* margin-top: 20px; */
+    padding: 100px;
+
+}
+.online-games h1{
+    font-size: 28px;
+font-weight: 700;
+margin-bottom: 8px;
+}
+.online-games small{
+    color: #534C64;
+font-weight: 400;
+}
+.game-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
 
 
 
@@ -114,7 +139,27 @@ text-transform: uppercase;
 
 
 
-/* .banner-img img{ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -138,10 +183,48 @@ text-transform: uppercase;
     .nav-text{
         flex-direction: column;
     }
+    .banner-section{
+        flex-direction: column-reverse;
+
+    }
+    .banner-text{
+        height: 30%;
+        background-image:url(./images/Group\ 14.png);
+        background-size: cover;
+        margin-left: 50px;
+    }
+    .banner-img img{
+        height: 60%;
+        width: 60%;
+        padding-left: 20%;
+
+    }
+    .game-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .online-games{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .online-games h1{
+        font-size: 20px;
+    }
+    .online-games small{
+        font-weight: 100;
+        font-size: 8px;
+    }
 }
 @media screen and (max-width:768px) {
     .nav-container{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    
+    .banner-section{
+        flex-direction: column;
+    }
+    .game-container{
+        flex-direction: column;
+    }
 }
